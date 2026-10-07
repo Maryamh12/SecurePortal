@@ -46,6 +46,14 @@ def greet():
     </form>
     {message}
     """
+@app.route("/welcome")
+def welcome():
+
+    name = request.args.get("name", "")
+    if name == "student":
+        return "<h1> Welcome Student! </h1>"
+    return f"<h1> Welcome {name}! </h1>"
+
 
 if __name__ == '__main__':
     app.run(debug=True)
