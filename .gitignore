@@ -1,0 +1,32 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Pycharm settings
+.idea/
+
+# maccOS files
+.DS_Store
+
+# Local Flask instance files
+instance/
+
+# Local SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+
+# Logs
+*.log
